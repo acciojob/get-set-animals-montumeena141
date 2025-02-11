@@ -1,10 +1,10 @@
 class Animal {
   constructor(species) {
-    this.species = species;
+    this._species = species;
   }
 
-  get _species() {
-    return this.species;
+  get species() {
+    return this._species;
   }
 
   makeSound() {
@@ -24,7 +24,7 @@ class Cat extends Animal {
   }
 }
 
-
+// Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
 window.Cat = Cat;
